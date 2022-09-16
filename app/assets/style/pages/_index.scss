@@ -1,0 +1,162 @@
+img{
+    object-fit: cover;
+}
+
+hr{
+    border: 0 ;
+    height: 4px !important;
+    background-color: #ff9800;
+    width: 100px;
+    margin: 20px auto;
+}
+
+.banner-left{
+    background-image: url('https://i.picsum.photos/id/1043/5184/3456.jpg?hmac=wsz2e0aFKEI0ij7mauIr2nFz2pzC8xNlgDHWHYi9qbc');
+    width: 100%;
+    height: 50vh;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include media-breakpoint-up(lg){
+        height: 100vh;
+    }
+}
+.banner-right{
+    background-image: url('https://i.picsum.photos/id/1015/6000/4000.jpg?hmac=aHjb0fRa1t14DTIEBcoC12c5rAXOSwnVlaA5ujxPQ0I');
+    width: 100%;
+    height: 50vh;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include media-breakpoint-up(lg){
+        height: 100vh;
+    }
+}
+
+.banner-right-cover:hover{
+        color:greenyellow !important;
+    }
+
+
+.about{
+    .headshot img{
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+    }
+}
+
+
+
+.skill{
+    .html-icon{
+        font-size: 160px;
+        color:#ff9800;
+        &:hover{
+            transform: rotateY(360deg);
+            transition: transform 2s;
+        }
+    }
+    .css-icon{
+        font-size: 160px;
+        color:blue;
+        &:hover{
+            transform: rotateY(360deg);
+            transition: transform 2s;
+        }
+    }
+    .javascript-icon{
+        font-size: 160px;
+        color:yellow;
+        &:hover{
+            transform: rotateY(360deg);
+            transition: transform 2s;
+        }
+    }
+    .bootstrap-icon{
+        font-size: 160px;
+        color:purple;
+        &:hover{
+            transform: rotateY(360deg);
+            transition: transform 2s;
+        }
+    }
+    .rwd-icon{
+        font-size: 160px;
+        color:rgb(6, 219, 194);
+        &:hover{
+            transform: rotateY(360deg);
+            transition: transform 2s;
+        }
+    }
+}
+
+
+.Portfolio{
+    .nav-tabs
+    {   
+        border-color: black;
+        .nav-link{
+        border-bottom: 0px;
+        color: #808080;
+        }
+    } 
+    .nav-tabs .nav-link.active{
+        background: #ff9800;
+        border-color: black;
+        color:black;
+    }
+    .Portfolio-pic{
+        position: relative;
+        img{
+            height: 300px;
+            width: 100%;
+        }
+    }
+    .img-cover{
+        position: absolute;
+        top:0;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        opacity: 0;
+        &:hover{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0.7;
+            transition: opacity 0.8s;
+        }
+        a{
+            &:hover{
+                color: #ff9800 !important;
+            }
+        }
+    }
+}
+
+.contact{
+    a{
+        &:hover{
+            color:#ff9800 !important;
+        }
+    }
+}
+
+
+//back-button
+.btn-back{
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    width: 70px;
+    height: 70px;
+    background-color: #ff9800;
+    box-shadow: 0px 0px 10px #b0bec5;
+    justify-content: center;
+    align-items: center;
+}
+.fa-arrow-up{
+    color:white;
+    font-size: 40px !important;
+}
