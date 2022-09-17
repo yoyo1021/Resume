@@ -47,15 +47,15 @@ hr{
 }
 
 .red-dot{
-    display: flex;
-    align-items:center;
+    position: relative;
     &::before{
        content: '';
+       position: absolute;
+       top:7px;
         width: 12px;
         height: 12px;
         border-radius: 50%;
         background:red;
-        margin-right: 8px; 
     }
     
 }
