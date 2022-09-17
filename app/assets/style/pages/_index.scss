@@ -34,19 +34,31 @@ hr{
 }
 
 .banner-right-cover:hover{
-        color:greenyellow !important;
+        color:rgb(126, 207, 4) !important;
     }
 
 
 .about{
     .headshot img{
         width: 250px;
-        height: 250px;
+        height:250px;
         object-fit: cover;
     }
 }
 
-
+.red-dot{
+    display: flex;
+    align-items:center;
+    &::before{
+       content: '';
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background:red;
+        margin-right: 8px; 
+    }
+    
+}
 
 .skill{
     .html-icon{
@@ -133,6 +145,7 @@ hr{
             }
         }
     }
+   
 }
 
 .contact{

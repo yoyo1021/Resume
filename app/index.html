@@ -11,11 +11,10 @@ current: index
       <div class="banner-left d-flex align-items-center justify-content-end">
         <h1 class="fs-lg-80 fw-bold text-white p-1">Welcome to</h1>
       </div>
-        
     </div>
     <div class="col-6">
       <div class="banner-right d-flex align-items-center">
-        <a href="#about" class="fw-bold text-white p-1 banner-right-cover"><h1 class="fs-lg-80">My Resume</h1></a>
+        <h1 class="fs-lg-80"><a href="#about" class="fw-bold text-white p-1 banner-right-cover">My Resume</a></h1>
       </div>
     </div>
   </div>
@@ -27,17 +26,17 @@ current: index
       <img src="./assets/images/headshot2.jpg" alt="headshot" class="img-fluid rounded-circle" >
     </div>
     <div class="about-me ps-md-4  w-100">
-      <div class="name text-center text-md-start">
+      <div class="name text-center text-lg-start">
         <h1 class="fs-1 fw-bold">黃鈺祐 <span class="d-none d-lg-inline ms-2">Joe Huang</span></h1>
       </div>
-      <div class="info mb-3 d-flex flex-column flex-lg-row">
+      <div class="info mb-3 d-flex flex-column flex-lg-row border-bottom">
         <table class="table">
                 <tbody>
                   <tr>
                     <td class="border-0 text-center" style="width:10%">
                       <i class="fa-solid fa-cake-candles fs-3"></i>
                     </td>
-                    <td class="border-0 fs-md-5">1996/10/21</td>
+                    <td class="border-0 fs-md-5">1996 / 10 / 21</td>
                   </tr>
                   <tr>
                     <td class="border-0 text-center" style="width:10%">
@@ -56,19 +55,26 @@ current: index
                     </td>
                     <td class="border-0 fs-md-5">國立彰化師範大學 資訊管理學系 2020 - 2022</td>
                   </tr>
+                  <tr>
+                    <td class="border-0 text-center" style="width:10%">
+                    </td>
+                    <td class="border-0 fs-md-5">六角學院 切版班 2022</td>
+                  </tr>
                 </tbody>
         </table>
-        <div class="exp w-100">
+        <div class="exp w-100 text-center text-lg-start">
           <h2 class="fw-bold">在學經歷</h2>
-          <ul>
-            <li class="fs-5">2016 -2019 教學助理</li>
+          <ul class="mb-3">
+            <li class="fs-5">2016 - 2019 教學助理</li>
             <li class="fs-5">2019 班級代表</li>
             <li class="fs-5">2019 畢業發表會總召</li>
           </ul>
         </div>
       </div>
       <div class="intro">
-       <p class="fs-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem consequuntur nam, hic at quae cupiditate ex ab excepturi! Nisi, ducimus? Dolorum maxime nostrum perspiciatis debitis placeat, sequi doloribus non nesciunt.</p>
+       <p class="fs-4">
+        Hi，我是鈺祐，畢業於國立彰化師範大學資訊管理學系，對於網頁設計有極大的興趣，喜歡即時看到自己作品的期待感以及完成後的成就感，因此在畢業前在六角學院購買切版的課程，先將切版的基礎打穩，而目前也在持續學習著JavaScript，未來會朝著React或Angular等框架繼續努力。這是我利用所學所製作的個人履歷網站，希望有機會能獲得貴公司的青睞。
+       </p>
       </div>  
     </div>
     
@@ -76,7 +82,7 @@ current: index
   </div>
 </section>
 
-<section class="skill bg-pink py-3 py-lg-5" id="skill">
+<section class="skill bg-gray py-3 py-lg-5" id="skill">
   <div class="container">
     <h2 class="fs-2 fs-lg-1 fw-bold text-center">技能<span class="fs-3 ms-2 d-none d-lg-inline">Skill</span></h2>
     <hr>
@@ -122,37 +128,87 @@ current: index
     <div class="tab-content p-3 py-lg-5">
       <div class="tab-pane fade show active" id="Front-End-Design">
         <ul class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-3">
-          <li class="col">
-            <div class="boeder">
+          <!-- 眼鏡網站 -->
+          <li class="col ">
+            <div class="card h-100">
               <div class="Portfolio-pic">
                 <img src="./assets/images/GlassesWeb.jpg" alt="GlassesWeb" class="img-fluid">
                 <div class="img-cover">
                   <a href="https://joe-1021.github.io/glassesweb/index.html" target="_blank" class="fs-2 text-white">more</a>
                 </div>
               </div>
-              <h3 class="border p-3">眼鏡網站</h3>
+                <h3 class="p-3 text-center border-bottom fs-3 fw-bold">眼鏡網站</h3>
+                <ul class="p-2 fs-5">
+                  <li class="red-dot">多頁式網頁設計</li>
+                  <li class="red-dot">利用 EJS 使每個分頁的 Header 及 Footer 一致</li>
+                  <li class="red-dot">使用RWD進行斷點排版</li>
+                </ul>
             </div>
           </li>
+          <!-- 後臺表單設計 -->
           <li class="col">
-            <div class="boeder">
+            <div class="card h-100">
+              <div class="Portfolio-pic">
+                <img src="./assets/images/formdesign.jpg" alt="GlassesWeb" class="img-fluid">
+                <div class="img-cover">
+                  <a href="https://joe-1021.github.io/backend-formdesign/#" target="_blank" class="fs-2 text-white">more</a>
+                </div>
+              </div>
+              <h3 class="p-3 text-center border-bottom fs-3 fw-bold">後臺表單設計</h3>
+              <ul class="p-2 fs-5 ">
+                <li class="red-dot">使用Bootstrap進行表單設計</li>
+                <li class="red-dot" >Modal 互動視窗</li>
+              </ul> 
+            </div>
+          </li>
+          <!-- 程式家教 -->
+          <li class="col">
+            <div class="card h-100">
               <div class="Portfolio-pic">
                 <img src="./assets/images/ProgramTutor.jpg" alt="ProgramTutor" class="img-fluid">
                 <div class="img-cover">
                   <a href="https://joe-1021.github.io/Program-tutor/" target="_blank" class="fs-2 text-white">more</a>
                 </div>
               </div>
-              <h3 class="border p-3">程式家教</h3>
+                <h3 class="p-3 text-center border-bottom fs-3 fw-bold">程式家教</h3>
+                <ul class="p-2 fs-5">
+                  <li class="red-dot">使用Bootstrap格線系統進行製作</li>
+                  <li class="red-dot">使用 Swipper 套件</li>
+                  <li class="red-dot">嘗試使用SCSS寫法取代CSS</li>
+                </ul>
             </div>
           </li>
+          <!-- Art-NFT -->
           <li class="col">
-            <div class="boeder">
+            <div class="card h-100">
               <div class="Portfolio-pic">
                 <img src="./assets/images/Art-NFT.jpg" alt="Art-NFT" class="img-fluid">
                 <div class="img-cover">
                   <a href="https://joe-1021.github.io/Art-NFT/index.html" target="_blank" class="fs-2 text-white">more</a>
                 </div>
               </div>
-              <h3 class="border p-3">Art-NFT</h3>
+                <h3 class="p-3 text-center border-bottom  fs-3 fw-bold">Art-NFT</h3>
+                <ul class="p-2 fs-5">
+                  <li class="red-dot">利用 Bootstrap 元件完成版型</li>
+                  <li class="red-dot">瀑布流排版</li>
+                </ul>
+            </div>
+          </li>
+          <!-- Resume -->
+          <li class="col">
+            <div class="card h-100">
+              <div class="Portfolio-pic border-0">
+                <img src="./assets/images/resume.jpg" alt="Art-NFT" class="img-fluid">
+                <div class="img-cover">
+                  <a href="https://joe-1021.github.io/Art-NFT/index.html" target="_blank" class="fs-2 text-white">more</a>
+                </div>
+              </div>
+              <div class="">
+                <h3 class="p-3 text-center border-bottom  fs-3 fw-bold">個人履歷網站</h3>
+                <ul class="p-2 fs-5">
+                  <li class="red-dot">利用所學製作關於我的履歷網站及作品集</li>
+                </ul>
+              </div>
             </div>
           </li>
         </ul>
