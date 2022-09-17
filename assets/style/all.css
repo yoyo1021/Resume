@@ -13107,7 +13107,7 @@ hr {
 }
 
 .banner-right-cover:hover {
-  color: greenyellow !important;
+  color: #7ecf04 !important;
 }
 
 .about .headshot img {
@@ -13115,6 +13115,24 @@ hr {
   height: 250px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.red-dot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.red-dot::before {
+  content: '';
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: red;
+  margin-right: 8px;
 }
 
 .skill .html-icon {
