@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
     <link rel="stylesheet" href="./assets/style/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- 視差滾動 -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   </head>
 
   <body>
@@ -54,58 +58,58 @@
 
 <section class="about bg-light py-3 py-lg-7" id="about">
   <div class="container d-flex flex-column align-items-center flex-lg-row">
-    <div class="headshot mb-3">
-      <img src="./assets/images/headshot2.jpg" alt="headshot" class="img-fluid rounded-circle" >
+    <div class="headshot mb-3" >
+      <img src="./assets/images/headshot2.jpg" alt="headshot" class="img-fluid rounded-circle">
     </div>
     <div class="about-me ps-md-4  w-100">
-      <div class="name text-center text-lg-start">
+      <div class="name text-center text-lg-start" data-aos="fade-down">
         <h1 class="fs-1 fw-bold">黃鈺祐 <span class="d-none d-lg-inline ms-2">Joe Huang</span></h1>
       </div>
       <div class="info mb-3 d-flex flex-column flex-lg-row border-bottom">
         <table class="table">
                 <tbody>
-                  <tr>
+                  <tr data-aos="fade-right">
                     <td class="border-0 text-center" style="width:10%">
                       <i class="fa-solid fa-cake-candles fs-3"></i>
                     </td>
                     <td class="border-0 fs-md-5">1996 / 10 / 21</td>
                   </tr>
-                  <tr>
+                  <tr data-aos="fade-right">
                     <td class="border-0 text-center" style="width:10%">
                       <i class="fa-solid fa-venus-mars fs-3"></i>
                     </td>
                     <td class="border-0 fs-md-5">男</td>
                   </tr>
-                  <tr>
+                  <tr data-aos="fade-right">
                     <td class="border-0 text-center" style="width:10%">
                       <i class="fa-solid fa-user-graduate fs-3"></i>
                     </td>
                     <td class="border-0 fs-md-5">中國文化大學 資訊管理學系 2015 - 2019</td>
                   </tr>
-                  <tr>
+                  <tr data-aos="fade-right">
                     <td class="border-0 text-center" style="width:10%">
                     </td>
                     <td class="border-0 fs-md-5">國立彰化師範大學 資訊管理學系 2020 - 2022</td>
                   </tr>
-                  <tr>
+                  <tr data-aos="fade-right">
                     <td class="border-0 text-center" style="width:10%">
                     </td>
                     <td class="border-0 fs-md-5">六角學院 切版班 2022</td>
                   </tr>
                 </tbody>
         </table>
-        <div class="exp w-100 text-center text-lg-start">
+        <div class="exp w-100 text-center text-lg-start" data-aos="fade-left">
           <h2 class="fw-bold">在學經歷</h2>
           <ul class="mb-3">
-            <li class="fs-5">2016 - 2019 教學助理</li>
-            <li class="fs-5">2019 班級代表</li>
-            <li class="fs-5">2019 畢業發表會總召</li>
+            <li class="fs-5 mb-1">2016 - 2019 教學助理</li>
+            <li class="fs-5 mb-1">2019 班級代表</li>
+            <li class="fs-5 mb-1">2019 畢業發表會總召</li>
           </ul>
         </div>
       </div>
-      <div class="intro">
+      <div class="intro"data-aos="fade-up">
        <p class="fs-4">
-        Hi，我是鈺祐，畢業於國立彰化師範大學資訊管理學系，對於網頁設計有極大的興趣，喜歡即時看到自己作品的期待感以及完成後的成就感，因此在畢業前在六角學院購買切版的課程，先將切版的基礎打穩，而目前也在持續學習著JavaScript，未來會朝著React或Angular等框架繼續努力。這是我利用所學所製作的個人履歷網站，希望有機會能獲得貴公司的青睞。
+        Hi，我是鈺祐，畢業於國立彰化師範大學資訊管理學系，對於網頁設計有極大的興趣，喜歡即時看到自己作品的期待感以及完成後的成就感，因此畢業前在六角學院購買切版的課程，先將切版的基礎打穩，而目前也在持續學習著JavaScript，未來會朝著React或Angular等框架繼續努力。這是我利用所學所製作的個人履歷網站，希望有機會能獲得貴公司的青睞。
        </p>
       </div>  
     </div>
@@ -119,23 +123,23 @@
     <h2 class="fs-2 fs-lg-1 fw-bold text-center">技能<span class="fs-3 ms-2 d-none d-lg-inline">Skill</span></h2>
     <hr>
     <ul class="row row-cols-1 row-cols-lg-5 gy-3">
-      <li class="col text-center">
+      <li class="col text-center" data-aos="flip-left"data-aos-easing="ease-out-cubic"data-aos-duration="2000">
         <i class="fa-brands fa-html5 html-icon mb-2"></i>
         <p class="mb-0 fs-3 fw-bold">Html</p>
       </li>
-      <li class="col text-center">
+      <li class="col text-center" data-aos="flip-left"data-aos-easing="ease-out-cubic"data-aos-duration="2000">
         <i class="fa-brands fa-css3-alt css-icon mb-2"></i>
         <p class="mb-0 fs-3 fw-bold">Css</p>
       </li>
-      <li class="col text-center">
+      <li class="col text-center" data-aos="flip-left"data-aos-easing="ease-out-cubic"data-aos-duration="2000">
         <i class="fa-brands fa-html5 javascript-icon mb-2"></i>
         <p class="mb-0 fs-3 fw-bold">JavaScript</p>
       </li>
-      <li class="col text-center">
+      <li class="col text-center" data-aos="flip-left"data-aos-easing="ease-out-cubic"data-aos-duration="2000">
         <i class="fa-brands fa-bootstrap bootstrap-icon mb-2"></i>
         <p class="mb-0 fs-3 fw-bold">Bootstrap</p>
       </li>
-      <li class="col text-center">
+      <li class="col text-center" data-aos="flip-left"data-aos-easing="ease-out-cubic"data-aos-duration="2000">
         <i class="fa-solid fa-mobile rwd-icon mb-2"></i>
         <p class="mb-0 fs-3 fw-bold">RWD</p>
       </li>
@@ -161,85 +165,100 @@
       <div class="tab-pane fade show active" id="Front-End-Design">
         <ul class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-3">
           <!-- 眼鏡網站 -->
-          <li class="col ">
+          <li class="col " data-aos="fade-down-right">
             <div class="card h-100">
-              <div class="Portfolio-pic">
+              <div class="Portfolio-pic ">
                 <img src="./assets/images/GlassesWeb.jpg" alt="GlassesWeb" class="img-fluid">
-                <div class="img-cover">
+                <div class="img-cover d-none d-lg-flex">
                   <a href="https://joe-1021.github.io/glassesweb/index.html" target="_blank" class="fs-2 text-white">more</a>
                 </div>
               </div>
                 <h3 class="p-3 text-center border-bottom fs-3 fw-bold">眼鏡網站</h3>
                 <ul class="p-2 fs-5">
-                  <li class="red-dot">多頁式網頁設計</li>
-                  <li class="red-dot">利用 EJS 使每個分頁的 Header 及 Footer 一致</li>
-                  <li class="red-dot">使用RWD進行斷點排版</li>
+                  <li class="red-dot"><p class="ms-3">多頁式網頁設計</p></li>
+                  <li class="red-dot"><p class="ms-3">利用 EJS 使每個分頁的 Header 及 Footer 一致</p></li>
+                  <li class="red-dot"><p class="ms-3">使用RWD進行斷點排版</p></li>
                 </ul>
+                <div class="d-flex mt-auto d-lg-none">
+                  <a href="https://joe-1021.github.io/glassesweb/index.html" class="btn btn-primary w-100">進入網站</a>
+                </div>
             </div>
           </li>
           <!-- 後臺表單設計 -->
-          <li class="col">
+          <li class="col" data-aos="fade-down">
             <div class="card h-100">
-              <div class="Portfolio-pic">
+              <div class="Portfolio-pic ">
                 <img src="./assets/images/formdesign.jpg" alt="GlassesWeb" class="img-fluid">
-                <div class="img-cover">
+                <div class="img-cover d-none d-lg-flex">
                   <a href="https://joe-1021.github.io/backend-formdesign/#" target="_blank" class="fs-2 text-white">more</a>
                 </div>
               </div>
               <h3 class="p-3 text-center border-bottom fs-3 fw-bold">後臺表單設計</h3>
               <ul class="p-2 fs-5 ">
-                <li class="red-dot">使用Bootstrap進行表單設計</li>
-                <li class="red-dot" >Modal 互動視窗</li>
+                <li class="red-dot"><p class="ms-3">使用Bootstrap進行表單設計</p></li>
+                <li class="red-dot"><p class="ms-3">Modal 互動視窗</p></li>
               </ul> 
+              <div class="d-flex mt-auto d-lg-none">
+                <a href="https://joe-1021.github.io/backend-formdesign/#" class="btn btn-primary w-100">進入網站</a>
+              </div>
             </div>
           </li>
           <!-- 程式家教 -->
-          <li class="col">
+          <li class="col" data-aos="fade-down-left">
             <div class="card h-100">
               <div class="Portfolio-pic">
                 <img src="./assets/images/ProgramTutor.jpg" alt="ProgramTutor" class="img-fluid">
-                <div class="img-cover">
+                <div class="img-cover d-none d-lg-flex">
                   <a href="https://joe-1021.github.io/Program-tutor/" target="_blank" class="fs-2 text-white">more</a>
                 </div>
               </div>
                 <h3 class="p-3 text-center border-bottom fs-3 fw-bold">程式家教</h3>
                 <ul class="p-2 fs-5">
-                  <li class="red-dot">使用Bootstrap格線系統進行製作</li>
-                  <li class="red-dot">使用 Swipper 套件</li>
-                  <li class="red-dot">嘗試使用SCSS寫法取代CSS</li>
+                  <li class="red-dot"><p class="ms-3">使用Bootstrap格線系統進行製作</p></li>
+                  <li class="red-dot"><p class="ms-3">使用 Swipper 套件</p></li>
+                  <li class="red-dot"><p class="ms-3">嘗試使用SCSS寫法取代CSS</p></li>
                 </ul>
+                <div class="d-flex mt-auto d-lg-none">
+                  <a href="https://joe-1021.github.io/Program-tutor/" class="btn btn-primary w-100">進入網站</a>
+                </div>
             </div>
           </li>
           <!-- Art-NFT -->
-          <li class="col">
+          <li class="col" data-aos="fade-up-right">
             <div class="card h-100">
               <div class="Portfolio-pic">
                 <img src="./assets/images/Art-NFT.jpg" alt="Art-NFT" class="img-fluid">
-                <div class="img-cover">
+                <div class="img-cover d-none d-lg-flex">
                   <a href="https://joe-1021.github.io/Art-NFT/index.html" target="_blank" class="fs-2 text-white">more</a>
                 </div>
               </div>
                 <h3 class="p-3 text-center border-bottom  fs-3 fw-bold">Art-NFT</h3>
                 <ul class="p-2 fs-5">
-                  <li class="red-dot">利用 Bootstrap 元件完成版型</li>
-                  <li class="red-dot">瀑布流排版</li>
+                  <li class="red-dot"><p class="ms-3">利用 Bootstrap 元件完成版型</p></li>
+                  <li class="red-dot"><p class="ms-3">瀑布流排版</p></li>
                 </ul>
+                <div class="d-flex mt-auto d-lg-none">
+                  <a href="https://joe-1021.github.io/Art-NFT/index.html" class="btn btn-primary w-100">進入網站</a>
+                </div>
             </div>
           </li>
           <!-- Resume -->
-          <li class="col">
+          <li class="col" data-aos="fade-up">
             <div class="card h-100">
               <div class="Portfolio-pic border-0">
                 <img src="./assets/images/resume.jpg" alt="Art-NFT" class="img-fluid">
-                <div class="img-cover">
-                  <a href="https://joe-1021.github.io/Art-NFT/index.html" target="_blank" class="fs-2 text-white">more</a>
+                <div class="img-cover d-none d-lg-flex">
+                  <a href="#top"  class="fs-2 text-white">more</a>
                 </div>
               </div>
               <div class="">
                 <h3 class="p-3 text-center border-bottom  fs-3 fw-bold">個人履歷網站</h3>
                 <ul class="p-2 fs-5">
-                  <li class="red-dot">利用所學製作關於我的履歷網站及作品集</li>
+                  <li class="red-dot"><p class="ms-3">利用所學製作關於我的履歷網站及作品集</p></li>
                 </ul>
+                <div class="d-flex mt-auto d-lg-none">
+                  <a href="#top" class="btn btn-primary w-100">進入網站</a>
+                </div>
               </div>
             </div>
           </li>
@@ -252,7 +271,7 @@
   </div>
 </section>
 
-<section class="contact bg-dark py-3 py-lg-5" id="contact">
+<section class="contact bg-dark py-3 py-lg-5" id="contact" data-aos="fade-up">
   <div class="d-flex flex-column align-items-center text-white">
     <div class="container border-bottom mb-3 text-center">
       <h2 class="fs-2 fs-lg-1 mb-2 fw-bold">聯絡方式 <span class="d-none d-lg-inline fs-3 ms-2">Contact Method</span></h2>
@@ -283,6 +302,31 @@
 
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
-  </body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+    <script>
+     AOS.init({
+      // Global settings:
+      disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+      startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+      initClassName: 'aos-init', // class applied after initialization
+      animatedClassName: 'aos-animate', // class applied on animation
+      useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+      disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+      debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+      throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+      
+
+      // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+      offset: 120, // offset (in px) from the original trigger point
+      delay: 0, // values from 0 to 3000, with step 50ms
+      duration: 400, // values from 0 to 3000, with step 50ms
+      easing: 'ease', // default easing for AOS animations
+      once: false, // whether animation should happen only once - while scrolling down
+      mirror: false, // whether elements should animate out while scrolling past them
+      anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+    });
+    </script>
+  </body>
 </html>
