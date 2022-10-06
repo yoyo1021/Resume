@@ -5,13 +5,20 @@ img{
 hr{
     border: 0 ;
     height: 4px !important;
-    background-color: #ff9800;
+    background-color: #2165a4;
+    opacity: 1;
     width: 100px;
     margin: 20px auto;
 }
-
-.banner-left{
-    background-image: url('https://i.picsum.photos/id/1043/5184/3456.jpg?hmac=wsz2e0aFKEI0ij7mauIr2nFz2pzC8xNlgDHWHYi9qbc');
+:root {
+    scroll-padding-top: 56px;
+    @include media-breakpoint-up(lg){
+        scroll-padding-top: 70px;
+        
+    }
+}
+.banner{
+    background-image: url('https://www.tetratecheurope.com/wp-content/uploads/2021/01/Terms-of-use-2000x1125-1-1536x864.jpg');
     width: 100%;
     height: 50vh;
     background-position:center;
@@ -19,31 +26,40 @@ hr{
     background-size: cover;
     @include media-breakpoint-up(lg){
         height: 100vh;
+        
     }
 }
-.banner-right{
-    background-image: url('https://i.picsum.photos/id/1015/6000/4000.jpg?hmac=aHjb0fRa1t14DTIEBcoC12c5rAXOSwnVlaA5ujxPQ0I');
-    width: 100%;
-    height: 50vh;
-    background-position:center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    @include media-breakpoint-up(lg){
-        height: 100vh;
-    }
-}
+// .banner-right{
+//     background-image: url('https://i.picsum.photos/id/1015/6000/4000.jpg?hmac=aHjb0fRa1t14DTIEBcoC12c5rAXOSwnVlaA5ujxPQ0I');
+//     width: 100%;
+//     height: 50vh;
+//     background-position:center;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     @include media-breakpoint-up(lg){
+//         height: 100vh;
+//     }
+// }
 
 .banner-right-cover:hover{
-        color:rgb(126, 207, 4) !important;
+        color:#ff9800 !important;
     }
 
 
 .about{
-    .headshot img{
+    background: #0b1d2e !important;
+    .headshot{
+        @include media-breakpoint-up(lg){
+            width: 50%;    
+        }
+      & img{
         width: 250px;
         height:250px;
         object-fit: cover;
-    }
+        box-shadow:0 0 30px 10px #194268;
+    }  
+} 
+    
 }
 
 .red-dot{
@@ -141,7 +157,7 @@ hr{
         }
         a{
             &:hover{
-                color: #ff9800 !important;
+                color: #0b66e7 !important;
             }
         }
     }
@@ -160,10 +176,10 @@ hr{
 //back-button
 .btn-back{
     position: fixed;
-    right: 50px;
+    right: 20px;
     bottom: 50px;
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
     background-color: #ff9800;
     box-shadow: 0px 0px 10px #b0bec5;
     justify-content: center;
