@@ -13088,7 +13088,7 @@ ol, ul, li {
   padding: 0;
 }
 
-a:hover {
+.navbar a:hover {
   color: #ff9800 !important;
 }
 
@@ -13107,7 +13107,7 @@ hr {
 }
 
 :root {
-  scroll-padding-top: 56px;
+  scroll-padding-top: 275px;
 }
 
 @media (min-width: 992px) {
@@ -13136,7 +13136,7 @@ hr {
 }
 
 .about {
-  background: #0b1d2e !important;
+  background: #042244  !important;
 }
 
 @media (min-width: 992px) {
