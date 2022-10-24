@@ -11,7 +11,7 @@ hr{
     margin: 20px auto;
 }
 :root {
-    scroll-padding-top: 56px;
+    scroll-padding-top: 275px;
     @include media-breakpoint-up(lg){
         scroll-padding-top: 70px;
         
@@ -47,7 +47,7 @@ hr{
 
 
 .about{
-    background: #0b1d2e !important;
+    background:#042244  !important;//#042244 #0b1d2e原始
     .headshot{
         @include media-breakpoint-up(lg){
             width: 50%;    

@@ -27,7 +27,7 @@
               <a class="nav-link  fs-4 px-lg-4 py-2" aria-current="page" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fs-4 px-lg-4 py-2" href="#skill">Skill</a>
+              <a class="nav-link fs-4 px-lg-4 py-2" href="#skill" >Skill</a>
             </li>
             <li class="nav-item">
               <a class="nav-link fs-4 px-lg-4 py-2" href="#Portfolio">Portfolio</a>
@@ -50,8 +50,9 @@
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
+
      AOS.init( {
       // Global settings:
       disable:'phone', // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
@@ -74,6 +75,11 @@
       anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
     });
+
+    $('.nav-link').on('click',function() {
+    $('.navbar-collapse').collapse('hide');
+    });
+
     </script>
   </body>
 </html>
