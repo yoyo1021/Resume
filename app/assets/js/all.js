@@ -1,3 +1,4 @@
+
 $(function() {
   console.log('Hello Bootstrap5');
 });
@@ -32,3 +33,46 @@ $('.nav-link').on('click',function() {
     anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
   });
+
+//js作品集
+let jsData=[
+  {
+    'id':0,
+    'imgUrl':'./assets/images/tour.jpg',
+    'title':'旅遊網站新增頁面',
+    'link':'https://joe-1021.github.io/tour-js/',
+    'description':{ des1:'DOM',
+                    des2:'AJAX',},
+  }
+]
+
+const jsPortList = document.querySelector('.js-portfolio');
+
+function renderData(jsData){
+  let content='';
+  jsData.forEach(item=>{
+  content+=`<li class="col">
+              <div class="card h-100">
+                <div class="Portfolio-pic border-0">
+                  <img src="${item.imgUrl}" alt="Art-NFT" class="img-fluid">
+                  <div class="img-cover d-none d-lg-flex">
+                    <a href="${item.link}" class="fs-2 text-white" target="_blank">more</a>
+                  </div>
+                </div>
+                <div class="">
+                  <h3 class="p-3 text-center border-bottom  fs-3 fw-bold">${item.title}</h3>
+                  <ul class="p-2 fs-5">
+                    <li class="red-dot"><p class="ms-3">${item.description.des1}</p></li>
+                    <li class="red-dot"><p class="ms-3">${item.description.des2}</p></li>
+                  </ul>
+                  <div class="d-flex mt-auto d-lg-none">
+                    <a href="${item.link}" class="btn btn-primary w-100">進入網站</a>
+                  </div>
+                </div>
+              </div>
+            </li>`
+});
+
+jsPortList.innerHTML=content;
+}
+renderData(jsData)
