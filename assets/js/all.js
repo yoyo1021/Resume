@@ -52,16 +52,43 @@ var jsData = [{
     des1: 'DOM',
     des2: 'AJAX'
   }
+}, {
+  'id': 1,
+  'imgUrl': './assets/images/woworoom.jpg',
+  'title': 'WOWOROOM',
+  'link': 'https://joe-1021.github.io/wowoRoom/',
+  'description': {
+    des1: 'GET',
+    des2: 'POST',
+    des3: 'PUT',
+    des4: 'DELETE'
+  }
+}, {
+  'id': 1,
+  'imgUrl': './assets/images/woworoom-backend.jpg',
+  'title': 'WOWOROOM-BackEnd',
+  'link': 'https://joe-1021.github.io/wowoRoom/backEnd',
+  'description': {
+    des1: '訂單紀錄',
+    des2: 'C3.js'
+  }
 }];
 var jsPortList = document.querySelector('.js-portfolio');
 
-function renderData(jsData) {
+function renderData() {
   var content = '';
   jsData.forEach(function (item) {
-    content += "<li class=\"col\">\n              <div class=\"card h-100\">\n                <div class=\"Portfolio-pic border-0\">\n                  <img src=\"".concat(item.imgUrl, "\" alt=\"Art-NFT\" class=\"img-fluid\">\n                  <div class=\"img-cover d-none d-lg-flex\">\n                    <a href=\"").concat(item.link, "\" class=\"fs-2 text-white\" target=\"_blank\">more</a>\n                  </div>\n                </div>\n                <div class=\"\">\n                  <h3 class=\"p-3 text-center border-bottom  fs-3 fw-bold\">").concat(item.title, "</h3>\n                  <ul class=\"p-2 fs-5\">\n                    <li class=\"red-dot\"><p class=\"ms-3\">").concat(item.description.des1, "</p></li>\n                    <li class=\"red-dot\"><p class=\"ms-3\">").concat(item.description.des2, "</p></li>\n                  </ul>\n                  <div class=\"d-flex mt-auto d-lg-none\">\n                    <a href=\"").concat(item.link, "\" class=\"btn btn-primary w-100\">\u9032\u5165\u7DB2\u7AD9</a>\n                  </div>\n                </div>\n              </div>\n            </li>");
+    content += "<li class=\"col\">\n              <div class=\"card h-100\">\n                <div class=\"Portfolio-pic border-0\">\n                  <img src=\"".concat(item.imgUrl, "\" alt=\"Art-NFT\" class=\"img-fluid\">\n                  <div class=\"img-cover d-none d-lg-flex\">\n                    <a href=\"").concat(item.link, "\" class=\"fs-2 text-white\" target=\"_blank\">more</a>\n                  </div>\n                </div>\n                <div class=\"\">\n                  <h3 class=\"p-3 text-center border-bottom  fs-3 fw-bold\">").concat(item.title, "</h3>\n                  <ul class=\"p-2 fs-5\">\n                    <li class=\"red-dot\"><p class=\"ms-3\">").concat(item.description.des1, "</p></li>\n                    <li class=\"red-dot\"><p class=\"ms-3\">").concat(item.description.des2, "</p></li>\n                    <li class=\"red-dot\"><p class=\"ms-3\">").concat(item.description.des3, "</p></li>\n                    <li class=\"red-dot\"><p class=\"ms-3\">").concat(item.description.des4, "</p></li>\n                  </ul>\n                  <div class=\"d-flex mt-auto d-lg-none\">\n                    <a href=\"").concat(item.link, "\" class=\"btn btn-primary w-100\">\u9032\u5165\u7DB2\u7AD9</a>\n                  </div>\n                </div>\n              </div>\n            </li>");
   });
-  jsPortList.innerHTML = content;
+  jsPortList.innerHTML = content; //把作品描述為 undefined 隱藏
+
+  var desList = document.querySelectorAll('.red-dot');
+  desList.forEach(function (i) {
+    if (i.innerText == 'undefined') {
+      i.hidden = true;
+    }
+  });
 }
 
-renderData(jsData);
+renderData();
 //# sourceMappingURL=all.js.map
