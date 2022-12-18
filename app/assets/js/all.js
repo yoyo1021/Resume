@@ -42,13 +42,36 @@ let jsData=[
     'title':'旅遊網站新增頁面',
     'link':'https://joe-1021.github.io/tour-js/',
     'description':{ des1:'DOM',
-                    des2:'AJAX',},
-  }
+                    des2:'AJAX',
+                  },
+  },
+  {
+    'id':1,
+    'imgUrl':'./assets/images/woworoom.jpg',
+    'title':'WOWOROOM',
+    'link':'https://joe-1021.github.io/wowoRoom/',
+    'description':{ des1:'GET',
+                    des2:'POST',
+                    des3:'PUT',
+                    des4:'DELETE',
+                  }
+  },
+  {
+    'id':1,
+    'imgUrl':'./assets/images/woworoom-backend.jpg',
+    'title':'WOWOROOM-BackEnd',
+    'link':'https://joe-1021.github.io/wowoRoom/backEnd',
+    'description':{ 
+                    des1:'訂單紀錄',
+                    des2:'C3.js',
+                  }
+  },
 ]
+
 
 const jsPortList = document.querySelector('.js-portfolio');
 
-function renderData(jsData){
+function renderData(){
   let content='';
   jsData.forEach(item=>{
   content+=`<li class="col">
@@ -64,6 +87,8 @@ function renderData(jsData){
                   <ul class="p-2 fs-5">
                     <li class="red-dot"><p class="ms-3">${item.description.des1}</p></li>
                     <li class="red-dot"><p class="ms-3">${item.description.des2}</p></li>
+                    <li class="red-dot"><p class="ms-3">${item.description.des3}</p></li>
+                    <li class="red-dot"><p class="ms-3">${item.description.des4}</p></li>
                   </ul>
                   <div class="d-flex mt-auto d-lg-none">
                     <a href="${item.link}" class="btn btn-primary w-100">進入網站</a>
@@ -74,5 +99,14 @@ function renderData(jsData){
 });
 
 jsPortList.innerHTML=content;
+
+//把作品描述為 undefined 隱藏
+const desList = document.querySelectorAll('.red-dot')
+  desList.forEach(i=>{
+    if(i.innerText=='undefined'){
+      i.hidden=true;
+    }
+  })
+
 }
-renderData(jsData)
+renderData()
