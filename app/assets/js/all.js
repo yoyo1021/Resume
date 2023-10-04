@@ -44,6 +44,7 @@ let jsData=[
     'description':{ des1:'DOM',
                     des2:'AJAX',
                   },
+    'aos':"fade-down-right"
   },
   {
     'id':1,
@@ -54,22 +55,54 @@ let jsData=[
                     des2:'POST',
                     des3:'PUT',
                     des4:'DELETE',
-                  }
+                  },
+    'aos':"fade-down"
   },
   {
-    'id':1,
+    'id':2,
     'imgUrl':'./assets/images/woworoom-backend.jpg',
     'title':'WOWOROOM-BackEnd',
     'link':'https://joe-1021.github.io/wowoRoom/backEnd',
     'description':{ 
                     des1:'訂單紀錄',
                     des2:'C3.js',
-                  }
+                  },
+    'aos':"fade-down-left"
+  },
+]
+
+let ReactData=[
+  {
+    'id':0,
+    'imgUrl':'./assets/images/reactTodo.jpg',
+    'title':'Todo',
+    'link':'https://joe-1021.github.io/vite-HW4/',
+    'description':{ des1:'註冊、登入',
+                    des2:'新增、刪除 Todo',
+                  },
+  },
+  {
+    'id':1,
+    'imgUrl':'./assets/images/searchSomething.jpg',
+    'title':'SearchSomething',
+    'link':'https://joe-1021.github.io/SearchSomething/',
+    'description':{ des1:'搜尋',
+                    des2:'串接搜尋api'
+                  },
+  },
+  {
+    'id':2,
+    'imgUrl':'./assets/images/order.jpg',
+    'title':'Order',
+    'link':'https://joe-1021.github.io/Order/',
+    'description':{ des1:'訂單系統',
+                  },
   },
 ]
 
 
 const jsPortList = document.querySelector('.js-portfolio');
+const reactPortList = document.querySelector('.react-portfolio');
 
 function renderData(){
   let content='';
@@ -77,7 +110,7 @@ function renderData(){
   content+=`<li class="col">
               <div class="card h-100">
                 <div class="Portfolio-pic border-0">
-                  <img src="${item.imgUrl}" alt="Art-NFT" class="img-fluid">
+                  <img src="${item.imgUrl}" alt="${item.title}" class="img-fluid">
                   <div class="img-cover d-none d-lg-flex">
                     <a href="${item.link}" class="fs-2 text-white" target="_blank">more</a>
                   </div>
@@ -96,9 +129,39 @@ function renderData(){
                 </div>
               </div>
             </li>`
-});
+  });
 
-jsPortList.innerHTML=content;
+  jsPortList.innerHTML=content;
+
+  let reactContent = '';
+  ReactData.forEach((item)=>{
+    reactContent+=`
+    <li class="col">
+      <div class="card h-100">
+        <div class="Portfolio-pic border-0">
+          <img src="${item.imgUrl}" alt="${item.title}" class="img-fluid">
+          <div class="img-cover d-none d-lg-flex">
+            <a href="${item.link}" class="fs-2 text-white" target="_blank">more</a>
+          </div>
+        </div>
+        <div class="">
+          <h3 class="p-3 text-center border-bottom  fs-3 fw-bold">${item.title}</h3>
+          <ul class="p-2 fs-5">
+            <li class="red-dot"><p class="ms-3">${item.description.des1}</p></li>
+            <li class="red-dot"><p class="ms-3">${item.description.des2}</p></li>
+            <li class="red-dot"><p class="ms-3">${item.description.des3}</p></li>
+            <li class="red-dot"><p class="ms-3">${item.description.des4}</p></li>
+          </ul>
+          <div class="d-flex mt-auto d-lg-none">
+            <a href="${item.link}" class="btn btn-primary w-100">進入網站</a>
+          </div>
+        </div>
+      </div>
+    </li>
+    `
+  });
+
+  reactPortList.innerHTML = reactContent;
 
 //把作品描述為 undefined 隱藏
 const desList = document.querySelectorAll('.red-dot')
