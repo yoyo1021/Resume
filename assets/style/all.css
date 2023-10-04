@@ -13213,12 +13213,12 @@ hr {
   transition: transform 2s, -webkit-transform 2s;
 }
 
-.skill .bootstrap-icon {
+.skill .react-icon {
   font-size: 160px;
-  color: purple;
+  color: #4ca1f6;
 }
 
-.skill .bootstrap-icon:hover {
+.skill .react-icon:hover {
   -webkit-transform: rotateY(360deg);
           transform: rotateY(360deg);
   -webkit-transition: -webkit-transform 2s;
