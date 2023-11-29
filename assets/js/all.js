@@ -47,7 +47,7 @@ var jsData = [{
   'id': 0,
   'imgUrl': './assets/images/tour.jpg',
   'title': '旅遊網站新增頁面',
-  'link': 'https://joe-1021.github.io/tour-js/',
+  'link': 'https://yoyo1021.github.io/tour-js/',
   'description': {
     des1: 'DOM',
     des2: 'AJAX'
@@ -57,7 +57,7 @@ var jsData = [{
   'id': 1,
   'imgUrl': './assets/images/woworoom.jpg',
   'title': 'WOWOROOM',
-  'link': 'https://joe-1021.github.io/wowoRoom/',
+  'link': 'https://yoyo1021.github.io/wowoRoom/',
   'description': {
     des1: 'GET',
     des2: 'POST',
@@ -69,7 +69,7 @@ var jsData = [{
   'id': 2,
   'imgUrl': './assets/images/woworoom-backend.jpg',
   'title': 'WOWOROOM-BackEnd',
-  'link': 'https://joe-1021.github.io/wowoRoom/backEnd',
+  'link': 'https://yoyo1021.github.io/wowoRoom/backEnd',
   'description': {
     des1: '訂單紀錄',
     des2: 'C3.js'
@@ -80,7 +80,7 @@ var ReactData = [{
   'id': 0,
   'imgUrl': './assets/images/reactTodo.jpg',
   'title': 'Todo',
-  'link': 'https://joe-1021.github.io/vite-HW4/',
+  'link': 'https://yoyo1021.github.io/vite-HW4/',
   'description': {
     des1: '註冊、登入',
     des2: '新增、刪除 Todo'
@@ -89,7 +89,7 @@ var ReactData = [{
   'id': 1,
   'imgUrl': './assets/images/searchSomething.jpg',
   'title': 'SearchSomething',
-  'link': 'https://joe-1021.github.io/SearchSomething/',
+  'link': 'https://yoyo1021.github.io/SearchSomething/',
   'description': {
     des1: '搜尋',
     des2: '串接搜尋api'
@@ -98,7 +98,7 @@ var ReactData = [{
   'id': 2,
   'imgUrl': './assets/images/order.jpg',
   'title': 'Order',
-  'link': 'https://joe-1021.github.io/Order/',
+  'link': 'https://yoyo1021.github.io/Order/',
   'description': {
     des1: '訂單系統'
   }
