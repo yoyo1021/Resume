@@ -65,17 +65,18 @@ var jsData = [{
     des4: 'DELETE'
   },
   'aos': "fade-down"
-}, {
-  'id': 2,
-  'imgUrl': './assets/images/woworoom-backend.jpg',
-  'title': 'WOWOROOM-BackEnd',
-  'link': 'https://yoyo1021.github.io/wowoRoom/backEnd',
-  'description': {
-    des1: '訂單紀錄',
-    des2: 'C3.js'
-  },
-  'aos': "fade-down-left"
-}];
+} // {
+//   'id':2,
+//   'imgUrl':'./assets/images/woworoom-backend.jpg',
+//   'title':'WOWOROOM-BackEnd',
+//   'link':'https://yoyo1021.github.io/wowoRoom/backEnd',
+//   'description':{ 
+//                   des1:'訂單紀錄',
+//                   des2:'C3.js',
+//                 },
+//   'aos':"fade-down-left"
+// },
+];
 var ReactData = [{
   'id': 0,
   'imgUrl': './assets/images/reactTodo.jpg',
@@ -110,6 +111,14 @@ var ReactData = [{
   'description': {
     des1: '購物網站',
     des2: '後臺系統'
+  }
+}, {
+  'id': 4,
+  'imgUrl': './assets/images/Zugether.jpg',
+  'title': 'Zugether',
+  'link': 'https://yoyo1021.github.io/zugetherComponents/',
+  'description': {
+    des1: '合租網站'
   }
 }];
 var jsPortList = document.querySelector('.js-portfolio');

@@ -9948,33 +9948,6 @@ fieldset:disabled .btn {
   .ps-sm-8 {
     padding-left: 5rem !important;
   }
-  .fs-sm-1 {
-    font-size: calc(1.375rem + 1.5vw) !important;
-  }
-  .fs-sm-2 {
-    font-size: calc(1.325rem + 0.9vw) !important;
-  }
-  .fs-sm-3 {
-    font-size: calc(1.275rem + 0.3vw) !important;
-  }
-  .fs-sm-4 {
-    font-size: 1.25rem !important;
-  }
-  .fs-sm-5 {
-    font-size: 1.125rem !important;
-  }
-  .fs-sm-6 {
-    font-size: 1rem !important;
-  }
-  .fs-sm-7 {
-    font-size: 0.875rem !important;
-  }
-  .fs-sm-80 {
-    font-size: calc(1.625rem + 4.5vw) !important;
-  }
-  .fs-sm-120 {
-    font-size: calc(1.875rem + 7.5vw) !important;
-  }
   .text-sm-start {
     text-align: left !important;
   }
@@ -10694,33 +10667,6 @@ fieldset:disabled .btn {
   }
   .ps-md-8 {
     padding-left: 5rem !important;
-  }
-  .fs-md-1 {
-    font-size: calc(1.375rem + 1.5vw) !important;
-  }
-  .fs-md-2 {
-    font-size: calc(1.325rem + 0.9vw) !important;
-  }
-  .fs-md-3 {
-    font-size: calc(1.275rem + 0.3vw) !important;
-  }
-  .fs-md-4 {
-    font-size: 1.25rem !important;
-  }
-  .fs-md-5 {
-    font-size: 1.125rem !important;
-  }
-  .fs-md-6 {
-    font-size: 1rem !important;
-  }
-  .fs-md-7 {
-    font-size: 0.875rem !important;
-  }
-  .fs-md-80 {
-    font-size: calc(1.625rem + 4.5vw) !important;
-  }
-  .fs-md-120 {
-    font-size: calc(1.875rem + 7.5vw) !important;
   }
   .text-md-start {
     text-align: left !important;
@@ -11442,33 +11388,6 @@ fieldset:disabled .btn {
   .ps-lg-8 {
     padding-left: 5rem !important;
   }
-  .fs-lg-1 {
-    font-size: calc(1.375rem + 1.5vw) !important;
-  }
-  .fs-lg-2 {
-    font-size: calc(1.325rem + 0.9vw) !important;
-  }
-  .fs-lg-3 {
-    font-size: calc(1.275rem + 0.3vw) !important;
-  }
-  .fs-lg-4 {
-    font-size: 1.25rem !important;
-  }
-  .fs-lg-5 {
-    font-size: 1.125rem !important;
-  }
-  .fs-lg-6 {
-    font-size: 1rem !important;
-  }
-  .fs-lg-7 {
-    font-size: 0.875rem !important;
-  }
-  .fs-lg-80 {
-    font-size: calc(1.625rem + 4.5vw) !important;
-  }
-  .fs-lg-120 {
-    font-size: calc(1.875rem + 7.5vw) !important;
-  }
   .text-lg-start {
     text-align: left !important;
   }
@@ -12188,33 +12107,6 @@ fieldset:disabled .btn {
   }
   .ps-xl-8 {
     padding-left: 5rem !important;
-  }
-  .fs-xl-1 {
-    font-size: calc(1.375rem + 1.5vw) !important;
-  }
-  .fs-xl-2 {
-    font-size: calc(1.325rem + 0.9vw) !important;
-  }
-  .fs-xl-3 {
-    font-size: calc(1.275rem + 0.3vw) !important;
-  }
-  .fs-xl-4 {
-    font-size: 1.25rem !important;
-  }
-  .fs-xl-5 {
-    font-size: 1.125rem !important;
-  }
-  .fs-xl-6 {
-    font-size: 1rem !important;
-  }
-  .fs-xl-7 {
-    font-size: 0.875rem !important;
-  }
-  .fs-xl-80 {
-    font-size: calc(1.625rem + 4.5vw) !important;
-  }
-  .fs-xl-120 {
-    font-size: calc(1.875rem + 7.5vw) !important;
   }
   .text-xl-start {
     text-align: left !important;
@@ -12936,33 +12828,6 @@ fieldset:disabled .btn {
   .ps-xxl-8 {
     padding-left: 5rem !important;
   }
-  .fs-xxl-1 {
-    font-size: calc(1.375rem + 1.5vw) !important;
-  }
-  .fs-xxl-2 {
-    font-size: calc(1.325rem + 0.9vw) !important;
-  }
-  .fs-xxl-3 {
-    font-size: calc(1.275rem + 0.3vw) !important;
-  }
-  .fs-xxl-4 {
-    font-size: 1.25rem !important;
-  }
-  .fs-xxl-5 {
-    font-size: 1.125rem !important;
-  }
-  .fs-xxl-6 {
-    font-size: 1rem !important;
-  }
-  .fs-xxl-7 {
-    font-size: 0.875rem !important;
-  }
-  .fs-xxl-80 {
-    font-size: calc(1.625rem + 4.5vw) !important;
-  }
-  .fs-xxl-120 {
-    font-size: calc(1.875rem + 7.5vw) !important;
-  }
   .text-xxl-start {
     text-align: left !important;
   }
@@ -12988,51 +12853,6 @@ fieldset:disabled .btn {
     font-size: 5rem !important;
   }
   .fs-120 {
-    font-size: 7.5rem !important;
-  }
-  .fs-sm-1 {
-    font-size: 2.5rem !important;
-  }
-  .fs-sm-2 {
-    font-size: 2rem !important;
-  }
-  .fs-sm-3 {
-    font-size: 1.5rem !important;
-  }
-  .fs-sm-80 {
-    font-size: 5rem !important;
-  }
-  .fs-sm-120 {
-    font-size: 7.5rem !important;
-  }
-  .fs-md-1 {
-    font-size: 2.5rem !important;
-  }
-  .fs-md-2 {
-    font-size: 2rem !important;
-  }
-  .fs-md-3 {
-    font-size: 1.5rem !important;
-  }
-  .fs-md-80 {
-    font-size: 5rem !important;
-  }
-  .fs-md-120 {
-    font-size: 7.5rem !important;
-  }
-  .fs-lg-1 {
-    font-size: 2.5rem !important;
-  }
-  .fs-lg-2 {
-    font-size: 2rem !important;
-  }
-  .fs-lg-3 {
-    font-size: 1.5rem !important;
-  }
-  .fs-lg-80 {
-    font-size: 5rem !important;
-  }
-  .fs-lg-120 {
     font-size: 7.5rem !important;
   }
 }
@@ -13117,18 +12937,7 @@ hr {
 }
 
 .banner {
-  background-image: url("https://www.tetratecheurope.com/wp-content/uploads/2021/01/Terms-of-use-2000x1125-1-1536x864.jpg");
-  width: 100%;
-  height: 50vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-@media (min-width: 992px) {
-  .banner {
-    height: 100vh;
-  }
+  background-color: black;
 }
 
 .banner-right-cover:hover {
@@ -13234,6 +13043,16 @@ hr {
 }
 
 .skill .rwd-icon:hover {
+  -webkit-transform: rotateY(360deg);
+          transform: rotateY(360deg);
+  -webkit-transition: -webkit-transform 2s;
+  transition: -webkit-transform 2s;
+  -o-transition: transform 2s;
+  transition: transform 2s;
+  transition: transform 2s, -webkit-transform 2s;
+}
+
+.skill .cSharp-icon:hover {
   -webkit-transform: rotateY(360deg);
           transform: rotateY(360deg);
   -webkit-transition: -webkit-transform 2s;
