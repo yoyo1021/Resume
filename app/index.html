@@ -1,0 +1,286 @@
+---
+title: yoyo's Resume
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+  <section class="banner" id="top">
+    <marquee behavior="alternate">
+   
+      <h1 class="fs-lg-80 fw-bold text-white p-1">Welcome to<a href="#about" class="fw-bold text-white p-1 banner-right-cover ">My Resume</a></h1>
+       
+      
+    </marquee>
+  </section>
+  
+  <section class="about py-3 py-lg-7 text-white" id="about">
+    <div class="container d-flex flex-column align-items-center flex-lg-row">
+      <div class="headshot mb-3" >
+        <img src="./assets/images/headshot2.jpg" alt="headshot" class="img-fluid rounded-circle" style="min-width: 250px;">
+      </div>
+      <div class="about-me ps-md-4">
+        <div class="name text-center text-lg-start" data-aos="fade-down">
+          <h1 class="fs-1 fw-bold">黃鈺祐 <span class="d-none d-lg-inline ms-2">Joe Huang</span></h1>
+        </div>
+        <div class="info mb-3 d-flex flex-column flex-lg-row border-bottom">
+          <table class="table">
+                  <tbody class="text-white">
+                    <tr data-aos="fade-right">
+                      <td class="border-0 text-center" style="width:10%">
+                        <i class="fa-solid fa-cake-candles fs-3"></i>
+                      </td>
+                      <td class="border-0 fs-md-5">1996 / 10 / 21</td>
+                    </tr>
+                    <tr data-aos="fade-right">
+                      <td class="border-0 text-center" style="width:10%">
+                        <i class="fa-solid fa-venus-mars fs-3"></i>
+                      </td>
+                      <td class="border-0 fs-md-5">男</td>
+                    </tr>
+                    <tr data-aos="fade-right">
+                      <td class="border-0 text-center" style="width:10%">
+                        <i class="fa-solid fa-user-graduate fs-3"></i>
+                      </td>
+                      <td class="border-0 fs-md-5">中國文化大學 資訊管理學系 2015 - 2019</td>
+                    </tr>
+                    <tr data-aos="fade-right">
+                      <td class="border-0 text-center" style="width:10%">
+                      </td>
+                      <td class="border-0 fs-md-5">國立彰化師範大學 資訊管理學系 2020 - 2022</td>
+                    </tr>
+                    <!-- <tr data-aos="fade-right">
+                      <td class="border-0 text-center" style="width:10%">
+                      </td>
+                      <td class="border-0 fs-md-5">六角學院 切版班 2022</td>
+                    </tr> -->
+                  </tbody>
+          </table>
+          <div class="exp w-100 text-center text-lg-start">
+            <h2 class="fw-bold">在職經歷</h2>
+            <ul class="mb-3">
+              <!-- <li class="fs-5 mb-1">2016 - 2019 教學助理</li>
+              <li class="fs-5 mb-1">2019 班級代表</li>
+              <li class="fs-5 mb-1">2019 畢業發表會總召</li> -->
+              <li class="fs-5 mb-1">2022.12 - 2023.10 台中銀行前端工程師</li>
+            </ul>
+          </div>
+        </div>
+        <div class="intro"data-aos="fade-up">
+         <p class="fs-4">
+          Hi，我是鈺祐，畢業於國立彰化師範大學資訊管理學系，對於網頁設計有極大的興趣，喜歡即時看到自己作品的期待感以及解決問題後的成就感，做事積極認真，是個負責任的人。先前任職台中商銀前端工程師，主要負責維護公司官網，已有前端相關技能，目前在資展國際(前資策會)學習c#補足後端相關知識。這是我利用所學所製作的個人履歷網站，希望有機會能獲得貴公司的青睞。
+         </p>
+        </div>  
+      </div>
+      
+  
+    </div>
+  </section>
+  
+  <section class="skill bg-gray py-3 py-lg-5" id="skill">
+    <div class="container">
+      <h2 class="fs-2 fs-lg-1 fw-bold text-center">技能<span class="fs-3 ms-2 d-none d-lg-inline">Skill</span></h2>
+      <hr>
+      <ul class="row row-cols-1 row-cols-lg-5 gy-3">
+        <li class="col text-center" data-aos="flip-left"data-aos-easing="ease-out-cubic"data-aos-duration="2000">
+          <i class="fa-brands fa-html5 html-icon mb-2"></i>
+          <p class="mb-0 fs-3 fw-bold">Html</p>
+        </li>
+        <li class="col text-center" data-aos="flip-left"data-aos-easing="ease-out-cubic"data-aos-duration="2000">
+          <i class="fa-brands fa-css3-alt css-icon mb-2"></i>
+          <p class="mb-0 fs-3 fw-bold">Css</p>
+        </li>
+        <li class="col text-center" data-aos="flip-left"data-aos-easing="ease-out-cubic"data-aos-duration="2000">
+          <i class="fa-brands fa-html5 javascript-icon mb-2"></i>
+          <p class="mb-0 fs-3 fw-bold">JavaScript</p>
+        </li>
+        <li class="col text-center" data-aos="flip-left"data-aos-easing="ease-out-cubic"data-aos-duration="2000">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" class="mb-2 cSharp-icon" style="width: 120px; height:160px"><path fill="#9B4F96" d="M115.4 30.7L67.1 2.9c-.8-.5-1.9-.7-3.1-.7-1.2 0-2.3.3-3.1.7l-48 27.9c-1.7 1-2.9 3.5-2.9 5.4v55.7c0 1.1.2 2.4 1 3.5l106.8-62c-.6-1.2-1.5-2.1-2.4-2.7z"/><path fill="#68217A" d="M10.7 95.3c.5.8 1.2 1.5 1.9 1.9l48.2 27.9c.8.5 1.9.7 3.1.7 1.2 0 2.3-.3 3.1-.7l48-27.9c1.7-1 2.9-3.5 2.9-5.4V36.1c0-.9-.1-1.9-.6-2.8l-106.6 62z"/><path fill="#fff" d="M85.3 76.1C81.1 83.5 73.1 88.5 64 88.5c-13.5 0-24.5-11-24.5-24.5s11-24.5 24.5-24.5c9.1 0 17.1 5 21.3 12.5l13-7.5c-6.8-11.9-19.6-20-34.3-20-21.8 0-39.5 17.7-39.5 39.5s17.7 39.5 39.5 39.5c14.6 0 27.4-8 34.2-19.8l-12.9-7.6zM97 66.2l.9-4.3h-4.2v-4.7h5.1L100 51h4.9l-1.2 6.1h3.8l1.2-6.1h4.8l-1.2 6.1h2.4v4.7h-3.3l-.9 4.3h4.2v4.7h-5.1l-1.2 6h-4.9l1.2-6h-3.8l-1.2 6h-4.8l1.2-6h-2.4v-4.7H97zm4.8 0h3.8l.9-4.3h-3.8l-.9 4.3z"/></svg>
+          <p class="mb-0 fs-3 fw-bold">C#</p>
+        </li>
+        <li class="col text-center" data-aos="flip-left"data-aos-easing="ease-out-cubic"data-aos-duration="2000">
+          <i class="fa-brands fa-react react-icon mb-2" ></i>
+          <p class="mb-0 fs-3 fw-bold">React</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+  
+  <section class="Portfolio bg-light py-3 py-lg-5" id="Portfolio">
+    <h2 class="fs-2 fs-lg-1 fw-bold text-center">作品集<span class="fs-3 ms-2 d-none d-lg-inline">Portfolio</span></h2>
+    <hr>
+    <div class="container px-0">
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link active fs-3 fs-lg-2 fw-bold" aria-current="page" href="#Front-End-Design" data-bs-toggle="tab" aria-selected="true">網頁切版 </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fs-3 fs-lg-2" href="#JavaScript" data-bs-toggle="tab" aria-selected="false">JavaScript</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  fs-3 fs-lg-2" href="#React" data-bs-toggle="tab" aria-selected="false">
+            <i class="fa-brands fa-react d-none d-lg-inline" style="color:rgb(76, 161, 246) ;"></i>
+            <p class="d-lg-inline mb-0">React</p>
+          </a>
+        </li>
+      </ul>
+  
+      <!-- nav-item 內容 -->
+      <div class="tab-content p-3 py-lg-5">
+        <!-- 前端設計 -->
+        <div class="tab-pane fade show active" id="Front-End-Design">
+          <ul class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-3">
+            <!-- 眼鏡網站 -->
+            <li class="col " data-aos="fade-down-right">
+              <div class="card h-100">
+                <div class="Portfolio-pic ">
+                  <img src="./assets/images/GlassesWeb.jpg" alt="GlassesWeb" class="img-fluid">
+                  <div class="img-cover d-none d-lg-flex">
+                    <a href="https://yoyo1021.github.io/glassesweb/index.html" target="_blank" class="fs-2 text-white">more</a>
+                  </div>
+                </div>
+                  <h3 class="p-3 text-center border-bottom fs-3 fw-bold">眼鏡網站</h3>
+                  <ul class="p-2 fs-5">
+                    <li class="red-dot"><p class="ms-3">多頁式網頁設計</p></li>
+                    <li class="red-dot"><p class="ms-3">利用 EJS 使每個分頁的 Header 及 Footer 一致</p></li>
+                    <li class="red-dot"><p class="ms-3">使用RWD進行斷點排版</p></li>
+                  </ul>
+                  <div class="d-flex mt-auto d-lg-none">
+                    <a href="https://yoyo1021.github.io/glassesweb/index.html"target="_blank" class="btn btn-primary w-100">進入網站</a>
+                  </div>
+              </div>
+            </li>
+            <!-- 後臺表單設計 -->
+            <li class="col" data-aos="fade-down">
+              <div class="card h-100">
+                <div class="Portfolio-pic ">
+                  <img src="./assets/images/formdesign.jpg" alt="GlassesWeb" class="img-fluid">
+                  <div class="img-cover d-none d-lg-flex">
+                    <a href="https://yoyo1021.github.io/backend-formdesign/#" target="_blank" class="fs-2 text-white">more</a>
+                  </div>
+                </div>
+                <h3 class="p-3 text-center border-bottom fs-3 fw-bold">後臺表單設計</h3>
+                <ul class="p-2 fs-5 ">
+                  <li class="red-dot"><p class="ms-3">使用Bootstrap進行表單設計</p></li>
+                  <li class="red-dot"><p class="ms-3">Modal 互動視窗</p></li>
+                </ul> 
+                <div class="d-flex mt-auto d-lg-none">
+                  <a href="https://yoyo1021.github.io/backend-formdesign/#"target="_blank" class="btn btn-primary w-100">進入網站</a>
+                </div>
+              </div>
+            </li>
+            <!-- 程式家教 -->
+            <li class="col" data-aos="fade-down-left">
+              <div class="card h-100">
+                <div class="Portfolio-pic">
+                  <img src="./assets/images/ProgramTutor.jpg" alt="ProgramTutor" class="img-fluid">
+                  <div class="img-cover d-none d-lg-flex">
+                    <a href="https://yoyo1021.github.io/Program-tutor/" target="_blank" class="fs-2 text-white">more</a>
+                  </div>
+                </div>
+                  <h3 class="p-3 text-center border-bottom fs-3 fw-bold">程式家教</h3>
+                  <ul class="p-2 fs-5">
+                    <li class="red-dot"><p class="ms-3">使用Bootstrap格線系統進行製作</p></li>
+                    <li class="red-dot"><p class="ms-3">使用 Swipper 套件</p></li>
+                    <li class="red-dot"><p class="ms-3">嘗試使用SCSS寫法取代CSS</p></li>
+                  </ul>
+                  <div class="d-flex mt-auto d-lg-none">
+                    <a href="https://yoyo1021.github.io/Program-tutor/"target="_blank" class="btn btn-primary w-100">進入網站</a>
+                  </div>
+              </div>
+            </li>
+            <!-- Art-NFT -->
+            <li class="col" data-aos="fade-up-right">
+              <div class="card h-100">
+                <div class="Portfolio-pic">
+                  <img src="./assets/images/Art-NFT.jpg" alt="Art-NFT" class="img-fluid">
+                  <div class="img-cover d-none d-lg-flex">
+                    <a href="https://yoyo1021.github.io/Art-NFT/index.html" target="_blank" class="fs-2 text-white">more</a>
+                  </div>
+                </div>
+                  <h3 class="p-3 text-center border-bottom  fs-3 fw-bold">Art-NFT</h3>
+                  <ul class="p-2 fs-5">
+                    <li class="red-dot"><p class="ms-3">利用 Bootstrap 元件完成版型</p></li>
+                    <li class="red-dot"><p class="ms-3">瀑布流排版</p></li>
+                  </ul>
+                  <div class="d-flex mt-auto d-lg-none">
+                    <a href="https://yoyo1021.github.io/Art-NFT/index.html"target="_blank" class="btn btn-primary w-100">進入網站</a>
+                  </div>
+              </div>
+            </li>
+            <!-- Resume -->
+            <li class="col" data-aos="fade-up">
+              <div class="card h-100">
+                <div class="Portfolio-pic border-0">
+                  <img src="./assets/images/resume.jpg" alt="Art-NFT" class="img-fluid">
+                  <div class="img-cover d-none d-lg-flex">
+                    <a href="#top"  class="fs-2 text-white">more</a>
+                  </div>
+                </div>
+                <div class="">
+                  <h3 class="p-3 text-center border-bottom  fs-3 fw-bold">個人履歷網站</h3>
+                  <ul class="p-2 fs-5">
+                    <li class="red-dot"><p class="ms-3">利用所學製作我的個人履歷網站</p></li>
+                  </ul>
+                  <div class="d-flex mt-auto d-lg-none">
+                    <a href="#top" class="btn btn-primary w-100">進入網站</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+           
+          </ul>
+        </div> 
+        <!-- JS -->
+        <div class="tab-pane fade show" id="JavaScript">
+          <ul class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-3 js-portfolio">
+
+          </ul>
+        </div>
+        <!-- React -->
+        <div class="tab-pane fade show" id="React">
+          <ul class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-3 react-portfolio">
+            <!-- <li class="col">
+              <div class="card h-100">
+                <div class="Portfolio-pic ">
+                  <img src="./assets/images/reactTodo.jpg" alt="tour-heroes" class="img-fluid">
+                  <div class="img-cover d-none d-lg-flex">
+                    <a href="https://yoyo1021.github.io/vite-HW4/" target="_blank" class="fs-2 text-white">more</a>
+                  </div>
+                </div>
+                  <h3 class="p-3 text-center fs-3 fw-bold">Todo</h3>
+                  <div class="d-flex mt-auto d-lg-none">
+                    <a href="https://yoyo1021.github.io/vite-HW4/" target="_blank" class="btn btn-primary w-100">進入網站</a>
+                  </div>
+              </div>
+            </li> -->
+          </ul>
+        </div>  
+      </div>
+    </div>
+  </section>
+  
+  <section class="contact bg-dark py-3 py-lg-5" id="contact" >
+    <div class="d-flex flex-column align-items-center text-white">
+      <div class="container border-bottom mb-3 text-center">
+        <h2 class="fs-2 fs-lg-1 mb-2 fw-bold">聯絡方式 <span class="d-none d-lg-inline fs-3 ms-2">Contact Me</span></h2>
+      </div>
+      <ul class="text-center">
+        <li class="mb-3 ">
+          <a href="mailto:a4253607@gmail.com" class="text-white"><i class="fa-solid fa-envelope me-2"></i>a4253607@gmail.com</a>
+        </li>
+        <li class="mb-3">
+          <a href="tel:+886-974266818" class="text-white"><i class="fa-solid fa-phone me-2"></i>0974266818</a>
+        </li>
+        <li class="">
+          <p class="mb-0">ChangHua, Taiwan</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+
+
+<a href="#top" class="btn-back rounded-circle d-flex d-lg-none"><i class="fa-solid fa-arrow-up"></i></a>
+
+
